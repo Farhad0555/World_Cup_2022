@@ -1,0 +1,213 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* -------------------The Greatest show part------------ */
+.Greatestshow{
+    background: black;
+    color: white;
+    margin-top: 30px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 10px;
+    width: 100%;
+}
+.livebtn{
+    background:#DD0000;
+    color: white;
+    width: 187px;
+    height: 56px;
+}
+.thumnale img{
+    width:581px;
+    
+    margin-bottom: 0;
+    margin-top: 30px;
+   
+}
+.Greatestshow_info{
+    margin-top: 200px;
+}
+
+/* ---------------------------
+Upcoming Match display css 
+--------------------------- */
+.upcomming_topper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.displays{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    margin-top: 20px;
+}
+.Upcoming_Match_hole{
+    width:312px;
+    height: 282px;
+    border: 1px solid black;
+    background: black;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.Upcoming_Match{
+    width:252px;
+    height: 64px;
+    border: 1px solid red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+.all_group{
+    width:252px;
+    height: 64px;
+    border: 1px solid red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+.blog{
+    width:252px;
+    height: 64px;
+    border: 1px solid red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: #DD0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.displayicon{
+    display: flex;
+    justify-content:space-between;
+}
+.tranfer{
+    border: 1px solid gray;
+    width: 67px;
+    height: 24px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* -------------Footer css------------------- */
+.footer{
+    width:1600px;
+    height:444;
+    border:1px solid black;
+    background: black;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.gool{
+    margin-top: 100px;
+}
+.goolinfo{
+    display: flex;
+    justify-content:center;
+    border-top: 1px solid gray;
+   opacity:.5;
+}
+.goolinfo p {
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/* ---------------------
+Media Query
+-------------------- */
+
+/* Media Queries */
+@media only screen and (max-width: 576px) {
+    .Greatestshow {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        width:fit-content;
+    }
+    .upcomming_topper {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .Upcoming_Match_hole {
+            color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: fit-content;
+            align-items: center;
+            background: white;
+            border: 1px solid white;
+        }
+        .displays {
+	
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            justify-items: center;
+            
+        }
+        .footer{
+            width: auto;
+        }
+        .goolinfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+}
+
+@media only screen and (min-width: 577px) and (max-width:992px) {
+    .Greatestshow {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        width:fit-content;
+    }
+    .upcomming_topper {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .Upcoming_Match_hole {
+            color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: fit-content;
+            align-items: center;
+            background: white;
+            border: 1px solid white;
+        }
+        .displays {
+	
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            justify-items: center;
+            
+        }
+        .footer{
+            width: auto;
+        }
+        .goolinfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+}
